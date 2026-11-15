@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <title>Watchover</title>
+  <defs>
+    <mask id="wo-favicon-gap">
+      <rect width="32" height="32" fill="#fff"/>
+      <path d="M3 16A13 4.25 0 0 0 29 16" transform="rotate(-18 16 16)" stroke="#000" stroke-width="6.5"/>
+    </mask>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="#13161A"/>
+  <path d="M9.32 15.91A7.5 7.5 0 1 1 22.68 15.91L17.34 26.38A1.5 1.5 0 0 1 14.66 26.38ZM19 12.5A3 3 0 1 0 13 12.5A3 3 0 1 0 19 12.5Z" fill="#EAFE07" fill-rule="evenodd" mask="url(#wo-favicon-gap)"/>
+  <g transform="rotate(-18 16 16)">
+    <path d="M6.34 13.16A13 4.25 0 0 0 25.01 19.06" stroke="#EAFE07" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="28.36" cy="14.69" r="2.25" fill="#EAFE07"/>
+  </g>
+</svg>

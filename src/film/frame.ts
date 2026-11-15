@@ -1,0 +1,28 @@
+export const FRAME = { width: 1920, height: 1080, fps: 30 } as const
+
+export const LAYOUT = {
+  safeX: 96,
+  labelTop: 108,
+  letterboxLabelTop: 160,
+  labelPx: 26,
+  labelDotPx: 12,
+  captionPx: 46,
+  captionBottom: 205,
+  captionOutlinePx: 6,
+  counterOutlinePx: 4,
+  counterRight: 96,
+  counterBottom: 470,
+  counterPx: 112,
+  counterUnitPx: 40,
+  counterGlyphPx: 72,
+  superPx: 60,
+  presentsPx: 34,
+  wordmarkPx: 150,
+  markPx: 190,
+  taglinePx: 48,
+  mottoPx: 60,
+  urlPx: 34,
+  footerPx: 26,
+  footerBottom: 120,
+  placePx: 40,
+} as const

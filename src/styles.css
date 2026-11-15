@@ -1,0 +1,217 @@
+@import 'tailwindcss' source(none);
+@source './';
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 400;
+  font-display: block;
+  src: url('/fonts/fira-sans-400-latin.woff2') format('woff2');
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 400;
+  font-display: block;
+  src: url('/fonts/fira-sans-400-latin-ext.woff2') format('woff2');
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1E00-1E9F, U+20A0-20AB,
+    U+20AD-20C4, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 500;
+  font-display: block;
+  src: url('/fonts/fira-sans-500-latin.woff2') format('woff2');
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 500;
+  font-display: block;
+  src: url('/fonts/fira-sans-500-latin-ext.woff2') format('woff2');
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1E00-1E9F, U+20A0-20AB,
+    U+20AD-20C4, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 600;
+  font-display: block;
+  src: url('/fonts/fira-sans-600-latin.woff2') format('woff2');
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-weight: 600;
+  font-display: block;
+  src: url('/fonts/fira-sans-600-latin-ext.woff2') format('woff2');
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1E00-1E9F, U+20A0-20AB,
+    U+20AD-20C4, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  font-weight: 500;
+  font-display: block;
+  src: url('/fonts/fira-sans-condensed-500-latin.woff2') format('woff2');
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  font-weight: 500;
+  font-display: block;
+  src: url('/fonts/fira-sans-condensed-500-latin-ext.woff2') format('woff2');
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1E00-1E9F, U+20A0-20AB,
+    U+20AD-20C4, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@theme {
+  --*: initial;
+
+  --color-bg: #13161a;
+  --color-panel: #1a1d22;
+  --color-raised: #23272d;
+  --color-line: #31363d;
+  --color-control: #6e7580;
+  --color-text: #eceef1;
+  --color-text-2: #b6bcc4;
+  --color-text-3: #9097a1;
+  --color-accent: #eafe07;
+  --color-accent-ink: #07173f;
+  --color-ink: #0b0d10;
+  --color-error: #ff7a5c;
+  --color-map-land: #1b1e22;
+  --color-map-water: #0f1215;
+  --color-map-road: #2e3238;
+  --color-map-label: #a3aab3;
+  --color-radar-lo: #0b0d10;
+  --color-radar-hi: #f2efe8;
+  --color-ev-water: #7bbafd;
+  --color-ev-fields: #f1aa26;
+  --color-ev-forest: #79cd9b;
+  --color-ev-built: #d76f50;
+  --color-ev-ground: #9673da;
+  --color-ev-snow: #e2e9f0;
+  --color-los-0: #ffadad;
+  --color-los-1: #be6f63;
+  --color-los-2: #7d341e;
+  --color-los-3: #411201;
+  --color-los-4: #190c09;
+  --color-los-5: #14303e;
+  --color-los-6: #286886;
+  --color-los-7: #519fd3;
+  --color-los-8: #9eb0ff;
+
+  --font-sans: 'Fira Sans', system-ui, sans-serif;
+  --font-cond: 'Fira Sans Condensed', 'Fira Sans', system-ui, sans-serif;
+  --default-font-family: var(--font-sans);
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  --text-meta: 13px;
+  --text-meta--line-height: 1.4;
+  --text-body: 14px;
+  --text-body--line-height: 1.45;
+  --text-card: 16px;
+  --text-card--line-height: 1.3;
+  --text-sentence: 18px;
+  --text-sentence--line-height: 1.3;
+  --text-figure: 28px;
+  --text-figure--line-height: 1.1;
+
+  --spacing: 4px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-full: 9999px;
+
+  --ease-ui: cubic-bezier(0.2, 0, 0.38, 0.9);
+  --ease-reveal: cubic-bezier(0.4, 0.14, 0.3, 1);
+}
+
+:root {
+  --dur-fast: 120ms;
+  --dur-ui: 220ms;
+  --dur-frame: 160ms;
+  --dur-pass: 900ms;
+  --dur-fly: 1400ms;
+  color-scheme: dark;
+}
+
+@custom-variant short {
+  @media (max-height: 800px) {
+    @slot;
+  }
+}
+
+@utility halo {
+  -webkit-text-stroke: var(--spacing) var(--color-bg);
+  paint-order: stroke fill;
+}
+
+@layer base {
+  input[type='range'] {
+    accent-color: var(--color-text);
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    font-feature-settings: 'kern';
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .maplibregl-ctrl-attrib,
+  .maplibregl-ctrl-bottom-right {
+    display: none;
+  }
+
+  .maplibregl-canvas:focus-visible {
+    outline: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0ms !important;
+    animation-duration: 0ms !important;
+  }
+}
